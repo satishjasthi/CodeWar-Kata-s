@@ -8,6 +8,9 @@ def filter_list(l):
 def filter_list(l):
   'return a new list with the strings filtered out'
   return [i for i in l if not isinstance(i, str)]
+#3.
+def filter_list(l):
+  return filter(lambda x: not isinstance(x, basestring), l)
 
 #3.My first attempt code :)
 def filter_list(l):
