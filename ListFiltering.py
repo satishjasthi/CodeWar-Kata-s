@@ -9,7 +9,7 @@ def filter_list(l):
   'return a new list with the strings filtered out'
   return [i for i in l if not isinstance(i, str)]
 
-#3.My code :)
+#3.My first attempt code :)
 def filter_list(l):
   string_holder = [string for string in l if type(string) == str]
   print string_holder
@@ -17,5 +17,7 @@ def filter_list(l):
   	l.remove(each)
   return l
 
-
+#4. Optimised code :)
+def filter_list(l):
+  return [each for each in l if type(each) is not str] #use type function to determine the data type and return only numerical values
 
